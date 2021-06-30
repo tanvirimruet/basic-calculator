@@ -1,0 +1,124 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 4rem;
+    min-height: 100vh;
+    background: #757F9A;  /* fallback for old browsers */
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display:block;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+
+}
+
+
+.calculator{
+    background:rgb(255, 47, 151);
+    width: 400PX;
+    border-radius: 12px;
+    box-shadow: 15px 15px 4px rgb(59, 58, 58);
+    padding: 15px;
+    padding-top: 25px;
+    margin:500px ,0px;
+   
+}
+
+.calculator-display{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(56, 53, 53);
+    color:rgb(247, 250, 253) ;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0;
+    padding-top: 30px;
+    
+
+}
+
+.calculator-display h1{
+    margin: 0;
+    padding: 10px;
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: 200;
+    font-size:3rem;
+    overflow-x: auto;
+
+    
+}
+
+button{
+    padding: 10px;
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(88, 4, 39);
+    box-shadow: 5px 5px 10px rgb(39, 35, 35);
+    ;
+    border-radius: 10px;
+    
+}
+
+button:hover{
+    filter: brightness(130%);
+}
+
+.clear:hover{
+    filter: brightness(80%);
+
+}
+
+
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    padding: 15px;
+
+
+}
+.operator{
+    color: rgb(25, 3, 36);
+    background-color:rgb(58, 222, 228) ;
+    font-size: 2.5rem;
+
+}
+.equal-sign{
+    grid-column: 4;
+    grid-row: 2 /span 4;
+} 
+
+footer{
+    margin: 20px;
+    padding: 1rem;
+    
+
+    
+}
+footer a{
+    text-decoration: none;
+    cursor:pointer;
+    color: darkslategrey;
+    width: 100%;
+    
+}
+footer a:hover {
+    color: azure;
+    background-color: grey;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+
+@media screen and (max-width:600px){
+.calculator{
+    width:85% ;
+}
